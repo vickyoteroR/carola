@@ -1,0 +1,26 @@
+@import './style';
+@import './modules/menucarola';
+@import './modules/contentcarola';
+
+.vanilla{
+  .ima{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border:1px solid silver;
+  }
+  &__div{
+    &.active{
+      &#red{
+          background: red;
+        }
+        &#green{
+          background: green;
+        }
+        &#blue{
+          background:blue;
+        }
+    }
+  }
+ 
+}
