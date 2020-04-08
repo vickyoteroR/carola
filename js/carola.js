@@ -1,29 +1,9 @@
-// //Listen for clicks in the browser
-// document.addEventListener('click', function (event) {
-
-//   // //Only run if it´s a menucarola__option
-//   if (!event.target.classList.contains('menucarola__option')) return;
-//   //comprobar que funciona evento
-//   console.log(event);
-
-//   //Get content area con el target = #
-//   const vanilla__div = document.querySelector(event.target.hash);
-//   if (!vanilla__div) return;
-
-//   //add and remove class active
-//   vanilla__div.classList.toggle('active');
-
-// }, false);
-
-// //___________
-
-const sneackers = ".sneackers";
-const area__sneackers = document.querySelectorAll(sneackers);
-console.log(area__sneackers);
+const itema = ".menu-item a";
+const menuitem = document.querySelectorAll(itema);
+console.log(menuitem);
 
 document.addEventListener("click", function(eventcarola) {
-  console.log(eventcarola);
-  if (!event.target.classList.contains("menu-item a")) return;
+  if (!menuitem) return;
 
   //paint trouser, glasses
   const paintcarola__area = document.querySelector(eventcarola.target.hash);
